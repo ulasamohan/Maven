@@ -3,12 +3,13 @@ package Pak1;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class test {
-
-public static void main(String[] args) {
+public class test11 {
+@Test
+public  void m1() {
 	
 	WebDriver driver = null;
 	WebDriverManager.chromedriver().setup();
