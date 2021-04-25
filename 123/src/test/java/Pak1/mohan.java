@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class test11 {
+public class mohan {
 @Test
 public  void m1() {
 	
