@@ -1,10 +1,32 @@
 package Pak1;
 
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 public class test {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+public static void main(String[] args) {
+	
+	WebDriver driver = null;
+	WebDriverManager.chromedriver().setup();
+	ChromeOptions options = new ChromeOptions();
+	options.addArguments("start-maximized"); 
+	options.addArguments("enable-automation"); 
+	options.addArguments("--no-sandbox"); 
+	options.addArguments("--disable-infobars");
+	options.addArguments("--disable-dev-shm-usage");
+	options.addArguments("--disable-browser-side-navigation"); 
+	options.addArguments("--disable-gpu"); 
+	driver = new ChromeDriver(options); 
+	driver.get("https://www.google.com/"); 
+	//WebDriverManager.chromedriver().setup();
+	
+	 //driver=new ChromeDriver();
+	driver.get("https://www.google.com/");
 
 	}
-
 }
+
